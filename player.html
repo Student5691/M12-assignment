@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>M12 Assignment - The Music Player Application</title>
+        <script defer src="js/player.js"></script>
+    </head>
+    <body>
+        <h1>The Music Player</h1>
+        <hr>
+
+        <p>Select an album to play:</p>
+        <select id="albumList"></select><br><br>
+        <button onclick="playAlbum()">Play Album</button><br><br>
+        <button onclick="showFav()">Show favorite album</button><br><br>
+        <p id="favoriteAlbum"></p>
+        <hr>
+        
+        <p>Add an album:<p>
+        <input type="text" id="userTitle" placeholder="Enter the title of the album"><br><br>
+        <input type="text" id="userArtist" placeholder="Enter the album's artist"><br><br>
+        <button onclick="userAddAlbum()">Add album</button><br><br>
+        <p id="addNotification"></p>
+
+    </body>
+</html>
